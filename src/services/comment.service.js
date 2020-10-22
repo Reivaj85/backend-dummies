@@ -22,7 +22,7 @@ class CommentService extends BaseService {
         return comments;
     }
 
-    async cretaComment(comment, bookId){
+    async createComment(comment, bookId){
         if(!bookId){
             throw new BadRequest("bookId must be sent");
         }
